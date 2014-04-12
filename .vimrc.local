@@ -1,0 +1,13 @@
+" Frank Zhao
+" April 2014
+" Uses spf13
+"
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set timeoutlen=0 "Time to wait after ESC
+set nofoldenable "do not fold by default
+set wrap " line wrapping on
+
+colorscheme solarized
