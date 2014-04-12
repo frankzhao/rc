@@ -1,0 +1,6 @@
+[ui]
+username = Frank Zhao <frank.zhao@email.com>
+ssh = ssh -C
+
+[extensions]
+prompt = ~/.oh-my-zsh/plugins/hg-prompt/prompt.py
