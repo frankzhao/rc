@@ -1,4 +1,4 @@
 rc
 ==
 
-Profile settings for bash, zsh, vim etc
+My personal profile settings for bash, zsh, vim etc
