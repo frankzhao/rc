@@ -17,11 +17,8 @@ alias hg="hg --debug"
 alias sniff="tcpdump -A -s0 -ien1"
 alias cls="clear"
 alias rsync="rsync -v"
-
-# SSH aliases
-alias csiro@glados="mosh csiro@glados.frankzhao.net --ssh=ssh\ -i\ ~/keys/csiro.priv"
-alias frank@glados="mosh frank@glados.frankzhao.net --ssh=ssh\ -i\ ~/keys/csiro.priv"
-alias partch="ssh u5180967@partch.anu.edu.au -i ~/keys/partch.priv"
+alias gitc="git add -A && git commit"
+alias lastmod="find . -type f -print0 | xargs -0 stat -f "%m %N" | sort -rn | head -1 | cut -f2- -d" ""
 
 # Load modules
 autoload -U zmv
@@ -95,3 +92,13 @@ source $HOME/.profile
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Change directory to frontmost Finder window
+cdf() {
+  target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+  if [ "$target" != "" ]; then
+    cd "$target"; pwd
+  else
+    echo 'No Finder window found' >&2
+  fi
+}
