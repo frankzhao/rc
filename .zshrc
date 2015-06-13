@@ -17,6 +17,8 @@ alias hg="hg --debug"
 alias sniff="tcpdump -A -s0 -ien1"
 alias cls="clear"
 alias rsync="rsync -v"
+alias vim=/usr/local/bin/vim
+alias vi=/usr/local/bin/vim
 alias gitc="git add -A && git commit"
 alias lastmod="find . -type f -print0 | xargs -0 stat -f "%m %N" | sort -rn | head -1 | cut -f2- -d" ""
 
@@ -71,8 +73,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-source $HOME/.profile
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+#source $HOME/.profile
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
