@@ -70,7 +70,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/gnat/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/gnat/bin:/usr/local/texlive/2015/bin/universal-darwin
+
 #source $HOME/.profile
 # export MANPATH="/usr/local/man:$MANPATH"
 
