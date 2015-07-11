@@ -7,9 +7,6 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cp="cp -vi"
 alias la="ls -al -G"
 alias ls="ls -G"
@@ -73,7 +70,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/gnat/bin
 #source $HOME/.profile
 # export MANPATH="/usr/local/man:$MANPATH"
 
