@@ -1,0 +1,16 @@
+# File: /usr/lib/systemd/system/i3lock.service
+# systemctl enable i3lock.service
+
+[Unit]
+Description=i3lock
+Before=sleep.target
+
+[Service]
+User=frank
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/i3lock -i /home/frank/Dropbox/Images/ominous_edge_by_masterteacher-d5wl9w5.png -d
+
+[Install]
+WantedBy=sleep.target
+
