@@ -1,0 +1,10 @@
+[user]
+	email = email
+	name = name
+	signingkey = key
+[commit]
+	gpgsign = true
+[alias]
+	uncommit = reset --soft HEAD^
+[gpg]
+	program = gpg2
