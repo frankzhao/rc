@@ -1,0 +1,14 @@
+# October 2020
+# From /etc/systemd/system/vnc.service
+
+[Unit]
+Description=Start vnc server
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/vncserver
+User=frank
+
+[Install]
+WantedBy=multi-user.target
+
